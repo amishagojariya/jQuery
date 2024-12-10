@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 100%;
+        background-color: #4aeeb7b3;
+    }
+
+    .bgc1 {
+        padding: 10px;
+        margin: 50px auto;
+        height: 500px;
+        width: 600px;
+        border-radius: 8px;
+        background-color: #035120;
+        display: flex;
+    }
+
+    #orangered {
+        border: 1px solid white;
+        margin: 50px auto;
+        height: 100px;
+        width: 50px;
+        background-color: orangered;
+        border-radius: 8px;
+    }
+
+    #skyblue {
+        border: 1px solid white;
+        margin: 50px auto;
+        height: 100px;
+        width: 50px;
+        background-color: skyblue;
+        border-radius: 8px;
+    }
+
+    #palegreen {
+        border: 1px solid white;
+        margin: 50px auto;
+        height: 100px;
+        width: 50px;
+        background-color: palegreen;
+        border-radius: 8px;
+    }
+
+    #black {
+        border: 1px solid white;
+        margin: 50px auto;
+        height: 100px;
+        width: 50px;
+        background-color: black;
+        border-radius: 8px;
+    }
+
+    #pink {
+        border: 1px solid white;
+        margin: 50px auto;
+        height: 100px;
+        width: 50px;
+        background-color: pink;
+        border-radius: 8px;
+    }
+
+    #darkred {
+        border: 1px solid white;
+        margin: 50px auto;
+        height: 100px;
+        width: 50px;
+        background-color: darkred;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <div class="bgc1">
+        <div id="orangered"></div>
+        <div id="skyblue"></div>
+        <div id="palegreen"></div>
+        <div id="black"></div>
+        <div id="pink"></div>
+        <div id="darkred"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#orangered').click(function () {
+                $('.bgc1').css('background-color', 'orangered');
+            })
+
+            $('#skyblue').click(function () {
+                $('.bgc1').css('background-color', 'skyblue');
+            })
+
+            $('#palegreen').click(function () {
+                $('.bgc1').css('background-color', 'palegreen');
+            })
+
+            $('#black').click(function () {
+                $('.bgc1').css('background-color', 'black');
+            })
+
+            $('#pink').click(function () {
+                $('.bgc1').css('background-color', 'pink');
+            })
+
+            $('#darkred ').click(function () {
+                $('.bgc1').css('background-color', 'darkred  ');
+            })
+        })
+    </script>
+</body>
+
+
+</html>

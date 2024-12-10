@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000000;
+            width: 100%;
+            margin: 50px auto;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+     .fadebox{
+            margin-top: 100px;
+            display: flex;
+            gap: 20px;
+            border: 1px solid white;
+            padding: 40px;
+            border-radius: 8px;
+            background-image: url(' https://images.pexels.com/photos/7736148/pexels-photo-7736148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        
+     }
+     button{
+            outline: 2px solid white;
+            padding: 8px 30px;
+            font-size: 20px;
+            border-radius: 8px;
+            background-image: url('https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            color: white;
+        }
+     
+     
+        img{
+          outline: 2px solid white;
+          padding: 10px;
+            width: 300px ;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    
+    <div class="fadebox">
+        <img src="https://images.pexels.com/photos/18725445/pexels-photo-18725445/free-photo-of-stars-in-the-sky-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+       
+        
+        <img src="https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+        <img src="https://images.pexels.com/photos/7736148/pexels-photo-7736148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+    </div>
+    <button class="fadeout">Fade-In-Out</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const fadebox=$('.fadebox');
+        $('.fadeout').click(()=>{
+            fadebox.fadeOut(1000)
+        })
+
+        $('.fadeout').click(()=>{
+            fadebox.fadeIn(1000)
+        })
+
+
+    </script>
+</body>
+</html>
